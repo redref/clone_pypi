@@ -162,6 +162,8 @@ def package_worker(queue, results, file_queue):
                     continue
                 if '-win_amd64' in filename:
                     continue
+                if '-win-amd64' in filename:
+                    continue
                 if re.search(regexp, filename):
                     continue
 
